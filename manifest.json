@@ -1,5 +1,5 @@
 {
-  "name": "Brother's Study Tracker",
+  "name": "Study Tracker",
   "short_name": "StudyFlow",
   "start_url": "index.html",
   "display": "standalone",
@@ -14,3 +14,4 @@
   ]
 
 }
+
