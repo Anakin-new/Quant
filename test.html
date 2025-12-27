@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>The Arena | StudyFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="test-container">
+        
+        <div id="mode-selection">
+            <header class="arena-header">
+                <h1 class="glow-text">THE ARENA</h1>
+                <p>Select your trial, Warrior.</p>
+            </header>
+            <div class="mode-grid">
+                <button class="mode-card ncert" onclick="startTest('ncert')">
+                    <div class="mode-tag">FOUNDATION</div>
+                    <h3>NCERT Exemplar</h3>
+                    <span class="mode-desc">Master the core concepts</span>
+                </button>
+                <button class="mode-card pyq" onclick="startTest('pyq')">
+                    <div class="mode-tag">ELITE</div>
+                    <h3>PYQ Archives</h3>
+                    <span class="mode-desc">Previous Year Battlegrounds</span>
+                </button>
+            </div>
+            <button class="retreat-btn" onclick="window.location.href='index.html'">← RETREAT TO CAMP</button>
+        </div>
+
+        <div id="chapter-selection" style="display: none;">
+            <header class="arena-header">
+                <h1 class="glow-text">SELECT CHAPTER</h1>
+                <p>Focus your training, Warrior.</p>
+            </header>
+
+            <div class="search-container">
+                <input type="text" id="chapter-search" placeholder="Search chapter..." onkeyup="filterChapters()">
+            </div>
+
+            <div id="chapter-list" class="chapter-grid">
+                </div>
+            <button class="retreat-btn" onclick="backToModes()">← BACK TO MODES</button>
+        </div>
+
+        <div id="quiz-arena" style="display: none;">
+            <div class="quiz-hud">
+                <span id="progress-text">BATTLE 1/10</span>
+                <div class="timer" id="timer">WARRIOR FOCUS</div>
+            </div>
+            <div class="question-card">
+                <p id="question-text">Loading challenge...</p>
+            </div>
+            <div id="options-grid" class="options-grid"></div>
+        </div>
+
+        <div id="result-screen" style="display: none;">
+            <h2 class="glow-text">BATTLE REPORT</h2>
+            <div class="score-summary">
+                <div class="score-circle">
+                    <span id="final-xp">+0</span>
+                    <small>XP EARNED</small>
+                </div>
+                <p id="accuracy-text">Accuracy: 0%</p>
+            </div>
+            <div id="review-list" class="review-list"></div>
+            <div class="result-actions">
+                <button class="action-btn primary" onclick="location.reload()">RE-ENTER ARENA</button>
+                <button class="action-btn secondary" onclick="window.location.href='index.html'">RETURN HOME</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/test-data.js"></script>
+    <script src="js/test-logic.js"></script>
+</body>
+</html>

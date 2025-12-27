@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vault | StudyFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mistakes.css">
+</head>
+<body>
+    <main class="vault-container">
+        <header class="vault-header">
+            <h1 class="glow-text">THE VAULT</h1>
+            <p>Your previous defeats are your future strengths.</p>
+        </header>
+
+        <div id="mistake-stats" class="stats-bar">
+            <span>Total Errors: <b id="error-count">0</b></span>
+        </div>
+
+        <div id="mistake-list" class="mistake-list">
+            </div>
+            <button class="action-btn secondary" onclick="clearFullVault()" style="color: #ff4500; border-color: #ff4500;">
+    PURGE ALL ERRORS
+</button>
+        <button class="action-btn secondary" onclick="window.location.href='index.html'">RETURN TO CAMP</button>
+    </main>
+
+    <script src="js/mistake-logic.js"></script>
+</body>
+</html>
