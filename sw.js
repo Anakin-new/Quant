@@ -6,6 +6,8 @@ const assets = [
   '/syllabus.html',
   '/mistakes.html',
   '/assets/icon.png,
+  '/assets/lvl1_mark.png,
+  '/assets/lvl2_trishul.png,
   '/css/style.css',
   '/css/syllabus.css',
   '/css/test.css',
@@ -50,4 +52,5 @@ self.addEventListener('fetch', e => {
   );
 
 });
+
 
