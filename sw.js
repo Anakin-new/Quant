@@ -1,4 +1,4 @@
-const cacheName = 'studyflow-v1';
+const cacheName = 'studyflow-v2';
 const assets = [
   '/',
   '/index.html',
@@ -47,4 +47,5 @@ self.addEventListener('fetch', e => {
       return res || fetch(e.request);
     })
   );
+
 });
