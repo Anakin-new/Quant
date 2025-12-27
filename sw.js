@@ -5,6 +5,7 @@ const assets = [
   '/test.html',
   '/syllabus.html',
   '/mistakes.html',
+  '/assets/icon.png,
   '/css/style.css',
   '/css/syllabus.css',
   '/css/test.css',
@@ -49,3 +50,4 @@ self.addEventListener('fetch', e => {
   );
 
 });
+
